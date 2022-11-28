@@ -23,11 +23,14 @@ import NavbarMainItem from './NavbarMainItem';
 import NavbarSubItem from './NavbarSubItem';
 
 import { AboutMeContent, ProjectsContent } from '../../types';
+import ThemeContext from '../../contexts/ThemeContext';
 
 
 const Navbar = () => {
     const [showSidebar, setShowSidebar] = useState(true);
     const sidebarRef = useRef<HTMLDivElement>(null)
+
+    const { toggleTheme } = React.useContext(ThemeContext)
 
     // Tamanho de uma tela de celular pro tailwind
     const tailwindMdSizeInt = 768
@@ -61,7 +64,7 @@ const Navbar = () => {
     return (
         <div ref={sidebarRef}>
             {/* Mobile Menu top bar */}
-            <div className="bg-lightSecondary shadow-md h-10 flex justify-between md:hidden items-center px-4 py-2">
+            <div className="bg-lightSecondary dark:bg-darkPrimary-800 shadow-md h-10 flex justify-between md:hidden items-center px-4 py-2">
                 <button onClick={toggleSidebar} >
                     <FaBars />
                 </button>
@@ -71,17 +74,16 @@ const Navbar = () => {
                     <div className="w-7 h-7 rounded-lg overflow-hidden">
                         <Link href="/">
                             <LogoWebsite />
-
-                            {/* <a onClick={() => handleAboutMeClick("Education")}>
-                            </a> */}
                         </Link>
                     </div>
                 </div>
             </div>
 
+
+
             {/* Sidebar */}
             <nav
-                className={`bg-lightSecondary h-screen flex flex-col w-52 lg:w-60 lg:px-1 2xl:px-2 absolute inset-y-0 left-0 transform ${showSidebar ? null : "-translate-x-full"
+                className={`bg-lightSecondary dark:bg-darkPrimary-800 h-screen flex flex-col w-52 lg:w-60 lg:px-1 2xl:px-2 absolute inset-y-0 left-0 transform ${showSidebar ? null : "-translate-x-full"
                     } md:relative md:translate-x-0 transition duration-200 ease-in-out z-50 md:pt-4`}
             >
                 <div className="h-full">
@@ -96,9 +98,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-center h-[15%]">
                         <div className="w-24 h-24 rounded-lg overflow-hidden">
                             <Link href="/">
-                                {/* <a onClick={() => onClickAboutMe("Education")}> */}
                                 <LogoWebsite />
-                                {/* </a> */}
                             </Link>
                         </div>
                     </div>
@@ -151,6 +151,11 @@ const Navbar = () => {
                     {/* <DownloadCVBtn cv="/MATEUS_TRENTZ_CV.pdf" /> */}
                 </div>
 
+                {/* Toggle theme */}
+                <button onClick={toggleTheme} className="">
+                    Toggle Theme
+                </button>
+
                 {/* socials */}
                 <div className="h-24 flex-grow-0 mb-3">
                     <p className="mb-2 ml-4 font-medium">Find me on</p>
@@ -161,7 +166,7 @@ const Navbar = () => {
                             rel="noreferrer"
                             title="Link to my GitHub"
                         >
-                            <FaGithubSquare className="w-10 h-10 text-lightPrimary-700" />
+                            <FaGithubSquare className="w-10 h-10 text-lightPrimary-700 dark:text-darkPrimary-300 hover:animate-wiggle" />
                         </a>
                         <a
                             href="https://public.tableau.com/app/profile/mtrentz"
@@ -169,7 +174,7 @@ const Navbar = () => {
                             rel="noreferrer"
                             title="Link to my Tableau Public"
                         >
-                            <IoLogoTableau className="w-9 h-9 bg-lightPrimary-700 text-lightSecondary rounded-[4px] p-[2px]" />
+                            <IoLogoTableau className="w-9 h-9 bg-lightPrimary-700 text-lightSecondary dark:bg-darkPrimary-300 dark:text-darkSecondary rounded-[4px] p-[2px] hover:animate-wiggle" />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/mtrentz/"
@@ -177,7 +182,7 @@ const Navbar = () => {
                             rel="noreferrer"
                             title="Link to my LinkedIn"
                         >
-                            <IoLogoLinkedin className="w-10 h-10 text-lightPrimary-700" />
+                            <IoLogoLinkedin className="w-10 h-10 text-lightPrimary-700 dark:text-darkPrimary-300 hover:animate-wiggle" />
                         </a>
                     </div>
                 </div>

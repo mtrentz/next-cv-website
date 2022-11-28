@@ -13,7 +13,7 @@ const NavbarMainItem = ({ title, icon, href }: Props) => {
             <Link href={href}>
                 <div className="flex flex-row flex-nowrap items-center">
                     {icon}
-                    <span className="ml-1 hover:font-semibold hover:text-lightPrimary-900">
+                    <span className="ml-1 hover:font-semibold hover:text-lightPrimary-900 hover:dark:text-darkPrimary-50">
                         {title}
                     </span>
                 </div>
