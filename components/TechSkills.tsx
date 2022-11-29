@@ -11,6 +11,9 @@ import javascript from "../public/tech_images/javascript.png"
 import tableau from "../public/tech_images/tableau.png"
 import tableauDashboard from "../public/tech_images/tableau_dashboard.png"
 import mysql from "../public/tech_images/mysql.png"
+import typescript from "../public/tech_images/typescript.png"
+import git from "../public/tech_images/git.png"
+import docker from "../public/tech_images/docker.png"
 
 const TechSkills = () => {
     return (
@@ -41,16 +44,14 @@ const TechSkills = () => {
                 <Card
                     cardImage={
                         <Image
-                            src={javascript}
-                            alt="javascript-logo"
-                            className="h-32 w-56"
+                            src={typescript}
+                            alt="mypescript-logo"
+                            className="h-32 w-32 rounded-xl"
                         />
                     }
-                    cardTitle="Javascript"
-                    cardDescription="Learned Javascript for web development and animations on p5.js."
+                    cardTitle="Typescript"
+                    cardDescription="Typescript is my go-to language for web development."
                 />
-                {/* <div className="col-span-2"> */}
-
                 <CardDouble
                     cardImage={
                         <Image
@@ -83,14 +84,40 @@ const TechSkills = () => {
                     cardTitle="SQL"
                     cardDescription="I've been working daily with SQL for a few years now."
                 />
+                <Card
+                    cardImage={
+                        <Image
+                            src={javascript}
+                            alt="javascript-logo"
+                            className="h-32 w-32 rounded-xl"
+                        />
+                    }
+                    cardTitle="Javascript"
+                    cardDescription="Learned Javascript for web development and animations on p5.js."
+                />
+                <Card
+                    cardImage={
+                        <Image
+                            src={docker}
+                            alt="docker-logo"
+                            className="h-32 w-48"
+                        />
+                    }
+                    cardTitle="Docker"
+                    cardDescription="Almost all my projects are containerized with Docker."
+                />
+                <Card
+                    cardImage={
+                        <Image
+                            src={git}
+                            alt="git-logo"
+                            className="h-32 w-32"
+                        />
+                    }
+                    cardTitle="Git"
+                    cardDescription="I use Git for version control and to collaborate with others."
+                />
             </div>
-
-
-            {/* Extra */}
-            {/* Docker */}
-            {/* Linux */}
-            {/* Git */}
-
         </div>
     )
 }

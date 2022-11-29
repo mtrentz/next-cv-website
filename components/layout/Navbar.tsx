@@ -23,14 +23,12 @@ import NavbarMainItem from './NavbarMainItem';
 import NavbarSubItem from './NavbarSubItem';
 
 import { AboutMeContent, ProjectsContent } from '../../types';
-import ThemeContext from '../../contexts/ThemeContext';
+import ThemeToggle from './ThemeToggle';
 
 
 const Navbar = () => {
     const [showSidebar, setShowSidebar] = useState(true);
     const sidebarRef = useRef<HTMLDivElement>(null)
-
-    const { toggleTheme } = React.useContext(ThemeContext)
 
     // Tamanho de uma tela de celular pro tailwind
     const tailwindMdSizeInt = 768
@@ -151,10 +149,9 @@ const Navbar = () => {
                     {/* <DownloadCVBtn cv="/MATEUS_TRENTZ_CV.pdf" /> */}
                 </div>
 
+
                 {/* Toggle theme */}
-                <button onClick={toggleTheme} className="">
-                    Toggle Theme
-                </button>
+                <ThemeToggle />
 
                 {/* socials */}
                 <div className="h-24 flex-grow-0 mb-3">

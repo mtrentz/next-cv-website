@@ -41,7 +41,7 @@ export default function Home() {
         <title>Mateus K Trentz</title>
       </Head>
 
-      <main className="w-screen">
+      <main className="w-screen h-screen overflow-y-auto overscroll-y-auto pb-2">
 
         {/* Title */}
         <PageTitle title={AboutMeContent.title} />

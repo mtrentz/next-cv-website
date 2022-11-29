@@ -17,7 +17,7 @@ const ContentNavbar = ({ content }: ContentProps) => {
             {/* Loop over content and create a "pill" anchor to navigate */}
             {content.map((item) => (
                 <div key={item.title} className="group flex flex-col justify-center">
-                    <p className="text-lightPrimary-100 dark:text-darkPrimary-900 group-hover:text-lightAccent-800 group-hover:dark:text-darkAccent-500 pb-1 text-xs text-center transition duration-500 ease-in-out md:text-sm lg:text-base 2xl:text-lg">
+                    <p className="text-lightPrimary-100 dark:text-darkPrimary-900 group-hover:text-lightAccent-800 dark:group-hover:text-darkAccent-500 pb-1 text-xs text-center transition duration-500 ease-in-out md:text-sm lg:text-base 2xl:text-lg">
                         {item.title}
                     </p>
                     <Link

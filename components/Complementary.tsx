@@ -29,7 +29,7 @@ const Complementary = () => {
                         <Image
                             src={sdu}
                             alt="sdu-logo"
-                            className="h-32 w-56"
+                            className="h-32 w-60 dark:text-darkPrimary-50 dark:invert"
                         />
                     }
                     cardBigImage={
