@@ -8,6 +8,7 @@ import Complementary from '../components/Complementary';
 import TechSkills from '../components/TechSkills';
 import PageTitle from '../components/layout/PageTitle';
 import Frameworks from '../components/Frameworks';
+import Experience from '../components/Experience';
 
 export default function Home() {
 
@@ -56,6 +57,7 @@ export default function Home() {
         <ContentNavbar content={content.content} />
 
         {/* O experience vai ter que ser o default qnd nao tiver query */}
+        {(q === AboutMeContent.experience.slug || q === undefined) && <Experience />}
         {q === AboutMeContent.tech_skills.slug && <TechSkills />}
         {q === AboutMeContent.frameworks.slug && <Frameworks />}
         {q === AboutMeContent.complementary.slug && <Complementary />}
