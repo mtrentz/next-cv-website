@@ -22,7 +22,7 @@ const ContentNavbar = ({ content }: ContentProps) => {
                     </p>
                     <Link
                         href={item.url}
-                        className={`${item.selected ? "bg-lightAccent-800 dark:bg-darkAccent-500" : "bg-lightPrimary-300 dark:bg-darkPrimary-600"} h-2 w-20 rounded-full md:h-3 md:w-24`}
+                        className={`${item.selected ? "bg-lightAccent-800 dark:bg-darkAccent-500" : "bg-lightPrimary-300 dark:bg-darkPrimary-600"} h-2 w-16 md:w-20 md:h-3 lg:w-24 rounded-full`}
                     ></Link>
                 </div>
             ))}

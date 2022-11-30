@@ -61,7 +61,6 @@ const TechSkills = () => {
                         />
                     }
                     cardBigImage={
-                        // Tentar meter um fill na img, tem que colocar o pai como absolute ou relative, algo assim
                         <Image
                             src={tableauDashboard}
                             alt="tableau-dashboard"

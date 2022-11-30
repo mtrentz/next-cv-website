@@ -7,6 +7,7 @@ import ContentNavbar, { ContentProps } from '../components/layout/ContentNavbar'
 import Complementary from '../components/Complementary';
 import TechSkills from '../components/TechSkills';
 import PageTitle from '../components/layout/PageTitle';
+import Frameworks from '../components/Frameworks';
 
 export default function Home() {
 
@@ -26,6 +27,11 @@ export default function Home() {
         title: AboutMeContent.tech_skills.title,
         url: `/?q=${AboutMeContent.tech_skills.slug}`,
         selected: q === AboutMeContent.tech_skills.slug,
+      },
+      {
+        title: AboutMeContent.frameworks.title,
+        url: `/?q=${AboutMeContent.frameworks.slug}`,
+        selected: q === AboutMeContent.frameworks.slug,
       },
       {
         title: AboutMeContent.complementary.title,
@@ -51,6 +57,7 @@ export default function Home() {
 
         {/* O experience vai ter que ser o default qnd nao tiver query */}
         {q === AboutMeContent.tech_skills.slug && <TechSkills />}
+        {q === AboutMeContent.frameworks.slug && <Frameworks />}
         {q === AboutMeContent.complementary.slug && <Complementary />}
 
 

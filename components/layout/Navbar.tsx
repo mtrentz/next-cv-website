@@ -14,6 +14,7 @@ import {
     HiOutlineSparkles,
     HiOutlineCode,
     HiOutlineChartBar,
+    HiOutlineCog
 } from "react-icons/hi";
 import { IoLogoTableau, IoLogoLinkedin } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";
@@ -118,6 +119,11 @@ const Navbar = () => {
                             title={AboutMeContent.tech_skills.title}
                             icon={<HiOutlineTerminal />}
                             href={`/?q=${AboutMeContent.tech_skills.slug}`}
+                        />
+                        <NavbarSubItem
+                            title={AboutMeContent.frameworks.title}
+                            icon={<HiOutlineCog />}
+                            href={`/?q=${AboutMeContent.frameworks.slug}`}
                         />
                         <NavbarSubItem
                             title={AboutMeContent.complementary.title}

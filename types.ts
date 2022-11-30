@@ -8,6 +8,10 @@ export const AboutMeContent = {
         title: "Tech Skills",
         slug: "tech-skills",
     },
+    frameworks: {
+        title: "Frameworks",
+        slug: "frameworks",
+    },
     complementary: {
         title: "Complementary",
         slug: "complementary",
