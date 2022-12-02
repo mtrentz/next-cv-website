@@ -29,6 +29,13 @@ module.exports = {
       darkPrimary: colors.gray,
       darkSecondary: colors.black,
       darkAccent: colors.cyan,
+      link: {
+        600: colors.blue[600],
+        800: colors.blue[800],
+      },
+      visited: {
+        600: colors.purple[600],
+      }
     }
   },
   plugins: [],

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import Navbar from "../layout/Navbar"
 import ThemeContext from "../../contexts/ThemeContext"
+import Head from 'next/head'
 
 type Props = {
     children: React.ReactNode
@@ -12,6 +13,9 @@ const Layout = ({ children }: Props) => {
 
     return (
         <div className={`${theme === "dark" ? "dark" : "light"}`}>
+            <Head>
+                <title>Mateus K Trentz</title>
+            </Head>
             <div className={`bg-lightPrimary-100 dark:bg-darkPrimary-900 md:flex min-h-screen min-w-screen lg:text-lg 2xl:text-xl text-lightPrimary-900 dark:text-darkPrimary-200 font-sans transition-colors duration-300`}>
                 <Navbar />
                 {children}

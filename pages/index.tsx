@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import { AboutMeContent } from '../types';
@@ -22,7 +21,7 @@ export default function Home() {
       {
         title: AboutMeContent.experience.title,
         url: `/?q=${AboutMeContent.experience.slug}`,
-        selected: q === AboutMeContent.experience.slug,
+        selected: q === AboutMeContent.experience.slug || q === undefined,
       },
       {
         title: AboutMeContent.tech_skills.title,
@@ -42,16 +41,14 @@ export default function Home() {
     ]
   }
 
+  const selectedTitle = content.content.find((item) => item.selected)?.title;
+
   return (
     <>
-      <Head>
-        <title>Mateus K Trentz</title>
-      </Head>
-
       <main className="w-screen h-screen overflow-y-auto overscroll-y-auto pb-2">
 
         {/* Title */}
-        <PageTitle title={AboutMeContent.title} />
+        <PageTitle title={selectedTitle || AboutMeContent.title} />
 
         {/* Navbar */}
         <ContentNavbar content={content.content} />

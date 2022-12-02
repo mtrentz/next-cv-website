@@ -169,7 +169,7 @@ const Navbar = () => {
                             rel="noreferrer"
                             title="Link to my GitHub"
                         >
-                            <FaGithubSquare className="w-10 h-10 text-lightPrimary-700 dark:text-darkPrimary-300 hover:animate-wiggle" />
+                            <FaGithubSquare className="w-10 h-10 text-lightPrimary-700 dark:text-darkPrimary-200 hover:animate-wiggle" />
                         </a>
                         <a
                             href="https://public.tableau.com/app/profile/mtrentz"
@@ -177,7 +177,7 @@ const Navbar = () => {
                             rel="noreferrer"
                             title="Link to my Tableau Public"
                         >
-                            <IoLogoTableau className="w-9 h-9 bg-lightPrimary-700 text-lightSecondary dark:bg-darkPrimary-300 dark:text-darkSecondary rounded-[4px] p-[2px] hover:animate-wiggle" />
+                            <IoLogoTableau className="w-9 h-9 bg-lightPrimary-700 text-lightSecondary dark:bg-darkPrimary-200 dark:text-darkSecondary rounded-[4px] p-[2px] hover:animate-wiggle" />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/mtrentz/"
@@ -185,7 +185,7 @@ const Navbar = () => {
                             rel="noreferrer"
                             title="Link to my LinkedIn"
                         >
-                            <IoLogoLinkedin className="w-10 h-10 text-lightPrimary-700 dark:text-darkPrimary-300 hover:animate-wiggle" />
+                            <IoLogoLinkedin className="w-10 h-10 text-lightPrimary-700 dark:text-darkPrimary-200 hover:animate-wiggle" />
                         </a>
                     </div>
                 </div>
