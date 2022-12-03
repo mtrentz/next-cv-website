@@ -6,6 +6,7 @@ import PageTitle from '../components/layout/PageTitle';
 import { ProjectsContent } from '../types';
 import Coding from '../components/Coding';
 import DataVizzes from '../components/DataVizzes';
+import Animations from '../components/Animations';
 
 const Projects = () => {
     // Get query ("q") from url
@@ -21,14 +22,14 @@ const Projects = () => {
                 selected: q === ProjectsContent.coding.slug || q === undefined,
             },
             {
-                title: ProjectsContent.data_vizz.title,
-                url: `/projects?q=${ProjectsContent.data_vizz.slug}`,
-                selected: q === ProjectsContent.data_vizz.slug,
-            },
-            {
                 title: ProjectsContent.animations.title,
                 url: `/projects?q=${ProjectsContent.animations.slug}`,
                 selected: q === ProjectsContent.animations.slug,
+            },
+            {
+                title: ProjectsContent.data_vizz.title,
+                url: `/projects?q=${ProjectsContent.data_vizz.slug}`,
+                selected: q === ProjectsContent.data_vizz.slug,
             },
         ]
     }
@@ -48,6 +49,7 @@ const Projects = () => {
                 {/* O experience vai ter que ser o default qnd nao tiver query */}
                 {(q === ProjectsContent.coding.slug || q === undefined) && <Coding />}
                 {q === ProjectsContent.data_vizz.slug && <DataVizzes />}
+                {q === ProjectsContent.animations.slug && <Animations />}
 
                 {/* {(q === AboutMeContent.experience.slug || q === undefined) && <Experience />}
                 {q === AboutMeContent.tech_skills.slug && <TechSkills />}

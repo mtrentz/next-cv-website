@@ -142,14 +142,14 @@ const Navbar = () => {
                             href={`/projects?q=${ProjectsContent.coding.slug}`}
                         />
                         <NavbarSubItem
-                            title={ProjectsContent.data_vizz.title}
-                            icon={<HiOutlineChartBar />}
-                            href={`/projects?q=${ProjectsContent.data_vizz.slug}`}
-                        />
-                        <NavbarSubItem
                             title={ProjectsContent.animations.title}
                             icon={<AiOutlinePlayCircle />}
                             href={`/projects?q=${ProjectsContent.animations.slug}`}
+                        />
+                        <NavbarSubItem
+                            title={ProjectsContent.data_vizz.title}
+                            icon={<HiOutlineChartBar />}
+                            href={`/projects?q=${ProjectsContent.data_vizz.slug}`}
                         />
                     </div>
                     {/* <DownloadCVBtn cv="/MATEUS_TRENTZ_CV.pdf" /> */}

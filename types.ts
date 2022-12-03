@@ -24,12 +24,12 @@ export const ProjectsContent = {
         title: "Coding",
         slug: "coding",
     },
+    animations: {
+        title: "Animations",
+        slug: "animations",
+    },
     data_vizz: {
         title: "Data Vizzes",
         slug: "data-vizzes",
     },
-    animations: {
-        title: "Animations",
-        slug: "animations",
-    }
 }
