@@ -12,7 +12,7 @@ const ThemeToggle = () => {
             <div className="flex flex-row flex-nowrap items-center">
                 {theme === 'dark' ? <BsSun /> : <BsMoonStars />}
                 <span className="ml-1 hover:font-semibold hover:text-lightPrimary-900 hover:dark:text-darkPrimary-50">
-                    Alterar tema
+                    Change theme
                 </span>
             </div>
         </button>

@@ -78,6 +78,8 @@ const DataVizzes = () => {
                     {/* Image Part */}
                     <a
                         href={vizData.link}
+                        target="_blank"
+                        rel="noreferrer"
                         className="w-1/2 -space-x-1 z-10 flex flex-row"
                     >
                         <div className="h-full w-full flex flex-grow opacity-80 relative">

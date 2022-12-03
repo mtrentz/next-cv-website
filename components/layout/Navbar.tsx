@@ -95,7 +95,7 @@ const Navbar = () => {
 
                     {/* Logo */}
                     <div className="flex items-center justify-center h-[15%]">
-                        <div className="w-24 h-24 rounded-lg overflow-hidden">
+                        <div className="w-28 h-2w-28 rounded-md overflow-hidden">
                             <Link href="/">
                                 <LogoWebsite />
                             </Link>

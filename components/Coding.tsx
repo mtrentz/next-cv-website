@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import CardCoding from './cards/CardCoding'
 import { TechColored as tech } from './general/TechColoring'
+import TextLink from './general/TextLink'
 
 // Images
 import chess from '../public/coding_imgs/chess.png'
@@ -12,7 +13,9 @@ import bolsa from '../public/coding_imgs/bolsa.png'
 import react from '../public/coding_imgs/react.png'
 import gov from '../public/coding_imgs/gov.png'
 import imgur from '../public/coding_imgs/imgur.png'
-
+import spotify from '../public/coding_imgs/spotify.png'
+import decimal from '../public/coding_imgs/decimal.png'
+import crawler from '../public/coding_imgs/crawler.png'
 
 interface CodingCardContent {
     title: string
@@ -27,6 +30,12 @@ const Coding = () => {
 
     const content: CodingContent = [
         {
+            title: "Spotify Dashboard",
+            description: <span> Full-stack application that uses the Spotify API to keep track of your listening history in real-time. It also has a feature to import your history, obtained from requesting your Spotify data. Frontend with a beautiful dashboard and many interesting statistics. Backend made in {tech.python} with {tech.django}, frontend made with {tech.react} and deployed with {tech.docker}. </span>,
+            link: "https://github.com/mtrentz/Spotify-Dashboard",
+            image: <Image src={spotify} alt="Spotify" fill={true} sizes="14 rem" priority={true} />,
+        },
+        {
             title: "Chess Image Recognizer",
             description: <span>Project that detects a chess board from a screenshot and lets you continue playing the match on Lichess. Coded on {tech.python} with the machine learning model made on {tech.pytorch}, web app built with {tech.django} and distributed with {tech.docker}.</span>,
             link: "https://github.com/mtrentz/Chess-Recognizer-App",
@@ -34,13 +43,13 @@ const Coding = () => {
         },
         {
             title: "Plain Text Tetris",
-            description: <span>Website to play Tetris with plain text, using only ASCII characters. Built with {tech.react}, all the logic was coded in {tech.javascript}. Try the game live on <a target="_blank" className="underline text-link-600 hover:text-link-800 visited:text-visited-600" rel="noreferrer" href="https://tetris.mtrentz.com.br">this website</a>.</span>,
+            description: <span>Website to play Tetris with plain text, using only ASCII characters. Built with {tech.react}, all the logic was coded in {tech.javascript}. Try the game live on <TextLink href="https://tetris.mtrentz.com.br" text="this website" />.</span>,
             link: "https://github.com/mtrentz/Plain-Text-Tetris",
             image: <Image src={tetris} alt="Tetris" fill={true} sizes="14 rem" />,
         },
         {
             title: "Animations with p5.js",
-            description: <span>I&apos;ve made quite a few interactive animations with p5.js, which is a {tech.javascript} library for creative coding.</span>,
+            description: <span>I&apos;ve made quite a few interactive animations with p5.js, which is a {tech.javascript} library for creative coding. Check them out <TextLink href="/projects/?q=animations" text="here" openOnCurrentWindow={true} />.</span>,
             link: "https://github.com/mtrentz/p5_projects",
             image: <Image src={p5} alt="Tetris" fill={true} sizes="14 rem" />,
         },
@@ -51,8 +60,20 @@ const Coding = () => {
             image: <Image src={bolsa} alt="Tetris" fill={true} sizes="14 rem" />,
         },
         {
+            title: "Stringsim",
+            description: <span>CLI application made in {tech.golang} that calculates the similarity between strings. Accepts files with many words, calculating the similarity of all combinations in parallel. Works with different algorithms. Easy usage with {tech.docker}.</span>,
+            link: "https://github.com/mtrentz/stringsim",
+            image: <Image src={decimal} alt="Decimal" fill={true} sizes="14 rem" className="dark:invert" />,
+        },
+        {
+            title: "Website Text Scraper",
+            description: <span>A very simple API made in {tech.golang} that, asynchronously, scrapes a website and returns all the text found, recursively scraping all the pages in the same domain. It returns a response separating the text from the header, body and footer of each page. Easy usage with {tech.docker}.</span>,
+            link: "https://github.com/mtrentz/Website-Text-Scraper",
+            image: <Image src={crawler} alt="Decimal" fill={true} sizes="14 rem" className="scale-125" />,
+        },
+        {
             title: "This Website",
-            description: <span>Curriculum website built with {tech.react}, {tech.nextjs} and {tech.tailwind} for styling. Deployed with {tech.docker}.</span>,
+            description: <span>Curriculum website built with {tech.react}, {tech.nextjs} and {tech.tailwind} for styling, design made completely by myself. Deployed with {tech.docker}.</span>,
             link: "https://github.com/mtrentz/Bolsa",
             image: <Image src={react} alt="Tetris" fill={true} sizes="14 rem" />,
         },

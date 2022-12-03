@@ -18,7 +18,7 @@ export function ThemeProvider({ children }: Props) {
         localStorage.setItem('mkt-theme', theme);
     }
 
-    const [theme, setTheme] = useState("light")
+    const [theme, setTheme] = useState("dark")
 
     useEffect(() => {
 

@@ -16,6 +16,10 @@ import git from "../public/tech_images/git.png"
 import docker from "../public/tech_images/docker.png"
 
 const TechSkills = () => {
+    // TODO: nginx
+    // TODO: github actions
+
+
     return (
         <div className="flex flex-row justify-center align-middle">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-4 gap-2">

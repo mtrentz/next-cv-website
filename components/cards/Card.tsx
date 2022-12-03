@@ -9,7 +9,7 @@ type Props = {
 
 const Card = ({ cardTitle, cardDescription, cardImage }: Props) => {
     return (
-        <div className="bg-lightSecondary dark:bg-darkPrimary-800 max-w-sm rounded-lg shadow-md">
+        <div className="bg-lightSecondary dark:bg-darkPrimary-800 px-4 lg:px-0 max-w-sm rounded-lg shadow-md">
             {/* Image Part */}
             <div className="flex flex-row justify-center my-4">
                 {cardImage}
