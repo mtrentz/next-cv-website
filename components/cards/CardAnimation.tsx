@@ -17,12 +17,11 @@ const CardAnimation = ({ title, description, image, link }: Props) => {
         >
             {/* Image Part */}
             <div className="flex justify-center py-1 lg:w-1/3">
-                <a
-                    href={link}
+                <div
                     className="w-56 h-56 rounded-md mx-auto border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden items-center relative"
                 >
                     {image}
-                </a>
+                </div>
             </div>
 
             <div className="w-11/12 flex flex-col justify-center items-between m-auto">
