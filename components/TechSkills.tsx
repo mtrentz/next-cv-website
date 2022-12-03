@@ -24,6 +24,7 @@ const TechSkills = () => {
                         <Image
                             src={python}
                             alt="python-logo"
+                            sizes="9rem"
                             className="h-32 w-32"
                         />
                     }
@@ -35,6 +36,7 @@ const TechSkills = () => {
                         <Image
                             src={golang}
                             alt="golang-logo"
+                            sizes="9rem"
                             className="h-32 w-24"
                         />
                     }
@@ -46,6 +48,7 @@ const TechSkills = () => {
                         <Image
                             src={typescript}
                             alt="mypescript-logo"
+                            sizes="9rem"
                             className="h-32 w-32 rounded-xl"
                         />
                     }
@@ -57,6 +60,7 @@ const TechSkills = () => {
                         <Image
                             src={tableau}
                             alt="tableau-logo"
+                            sizes="9rem"
                             className="h-32 w-32"
                         />
                     }
@@ -64,8 +68,8 @@ const TechSkills = () => {
                         <Image
                             src={tableauDashboard}
                             alt="tableau-dashboard"
+                            sizes="13rem"
                             fill={true}
-                            // TODO: Tirar e nao tirar
                             className="dark:invert dark:-hue-rotate-180"
                         />
                     }
@@ -77,6 +81,7 @@ const TechSkills = () => {
                         <Image
                             src={mysql}
                             alt="mysql-logo"
+                            sizes="9rem"
                             className="h-36 w-48"
                         />
                     }
@@ -88,6 +93,7 @@ const TechSkills = () => {
                         <Image
                             src={javascript}
                             alt="javascript-logo"
+                            sizes="9rem"
                             className="h-32 w-32 rounded-xl"
                         />
                     }
@@ -99,6 +105,7 @@ const TechSkills = () => {
                         <Image
                             src={docker}
                             alt="docker-logo"
+                            sizes="9rem"
                             className="h-32 w-48"
                         />
                     }
@@ -110,6 +117,7 @@ const TechSkills = () => {
                         <Image
                             src={git}
                             alt="git-logo"
+                            sizes="9rem"
                             className="h-32 w-32"
                         />
                     }

@@ -20,6 +20,7 @@ const Experience = () => {
                                 src={me}
                                 alt="Profile Picture"
                                 fill={true}
+                                sizes="15rem"
                             />
                         </div>
                     </div>
@@ -52,6 +53,7 @@ const Experience = () => {
                                 src={ufrgs}
                                 alt="University Picture"
                                 fill={true}
+                                sizes="12rem"
                                 className="pb-2 pl-2"
                             />
                         </div>
@@ -74,11 +76,12 @@ const Experience = () => {
                     {/* Job Part */}
                     <div className="md:flex md:flex-col lg:flex-row md:justify-center md:items-center">
                         {/* Job Picture */}
-                        <div className="rounded-2xl mx-auto my-3 md:mx-5 border border-lightPrimary-300 dark:border-darkPrimary-700  overflow-hidden w-48 h-36 pt-2 relative">
+                        <div className="rounded-2xl mx-auto my-3 md:mx-5 border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden w-48 h-36 pt-2 relative">
                             <Image
                                 src={maxiquim}
                                 alt="Job Picture"
                                 fill={true}
+                                sizes="13rem"
                             // className="w-32 h-32"
                             />
                         </div>

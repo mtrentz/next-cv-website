@@ -18,6 +18,7 @@ const Complementary = () => {
                         <Image
                             src={unibio}
                             alt="unibio-logo"
+                            sizes="9rem"
                             className="h-36 w-36"
                         />
                     }
@@ -29,6 +30,7 @@ const Complementary = () => {
                         <Image
                             src={sdu}
                             alt="sdu-logo"
+                            sizes="9rem"
                             className="h-32 w-60 dark:text-darkPrimary-50 dark:invert"
                         />
                     }
@@ -36,6 +38,7 @@ const Complementary = () => {
                         <Image
                             src={sduPhoto}
                             alt="sdu-photo"
+                            sizes="13rem"
                             fill={true}
                             className="object-cover opacity-80"
                         />
@@ -48,6 +51,7 @@ const Complementary = () => {
                         <Image
                             src={dtu}
                             alt="dtu-logo"
+                            sizes="9rem"
                             className="h-40 w-40"
                         />
                     }

@@ -23,6 +23,7 @@ const Frameworks = () => {
                         <Image
                             src={django}
                             alt="django-logo"
+                            sizes="8rem"
                             className="h-32 w-32"
                         />
                     }
@@ -34,6 +35,7 @@ const Frameworks = () => {
                         <Image
                             src={react}
                             alt="react-logo"
+                            sizes="8rem"
                             className="h-32 w-32"
                         />
                     }
@@ -45,6 +47,7 @@ const Frameworks = () => {
                         <Image
                             src={nextjs}
                             alt="nextJS-logo"
+                            sizes="8rem"
                             className="h-32 w-32 dark:invert"
                         />
                     }
@@ -56,6 +59,7 @@ const Frameworks = () => {
                         <Image
                             src={tailwind}
                             alt="tailwind-logo"
+                            sizes="8rem"
                             className="h-32 w-32"
                         />
                     }
@@ -67,6 +71,7 @@ const Frameworks = () => {
                         <Image
                             src={cypress}
                             alt="cypress-logo"
+                            sizes="8rem"
                             className="h-32 w-32"
                         />
                     }
@@ -78,6 +83,7 @@ const Frameworks = () => {
                         <Image
                             src={pandas}
                             alt="pandas-logo"
+                            sizes="8rem"
                             className="h-32 w-24"
                         />
                     }
@@ -89,6 +95,7 @@ const Frameworks = () => {
                         <Image
                             src={p5js}
                             alt="p5js-logo"
+                            sizes="8rem"
                             className="h-32 w-32 rounded-lg"
                         />
                     }
@@ -100,6 +107,7 @@ const Frameworks = () => {
                         <Image
                             src={pytorch}
                             alt="pytorch-logo"
+                            sizes="8rem"
                             className="h-32 w-32 rounded-lg"
                         />
                     }
@@ -111,6 +119,7 @@ const Frameworks = () => {
                         <Image
                             src={keras}
                             alt="keras-logo"
+                            sizes="8rem"
                             className="h-32 w-32 rounded-lg"
                         />
                     }

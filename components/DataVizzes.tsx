@@ -23,33 +23,32 @@ const DataVizzes = () => {
     const content: DataVizzContent = [
         {
             title: "Plastic Recyclers",
-            description:
-                "Location and inauguration date of all plastic recyclers in Brazil.",
-            image: <Image src={recuperadores} alt="Tableau Dashboard" fill={true} sizes="50vw" priority={true} />,
+            description: "Location and inauguration date of all plastic recyclers in Brazil.",
+            image: <Image src={recuperadores} alt="Tableau Dashboard" fill={true} sizes="40vw" placeholder="blur" priority={true} />,
             link: "https://public.tableau.com/views/RecicladoresdePlsticonoBrasil/EstabelecimentosRecuperadores2?:language=en-US&:display_count=n&:origin=viz_share_link",
         },
         {
             title: "My Spotify",
             description: "Analysis of my spotify listening habits. Top artists and genres.",
-            image: <Image src={spotify} alt="Tableau Dashboard" fill={true} sizes="50vw" />,
+            image: <Image src={spotify} alt="Tableau Dashboard" fill={true} sizes="40vw" placeholder="blur" />,
             link: "https://public.tableau.com/views/MySpotifyAnalysis/Home?:language=en-US&:display_count=n&:origin=viz_share_link",
         },
         {
             title: "Polyethylene in S.A.",
             description: "General data of production, consumption and exports of Polyethylene in South America.",
-            image: <Image src={pe} alt="Tableau Dashboard" fill={true} sizes="50vw" />,
+            image: <Image src={pe} alt="Tableau Dashboard" fill={true} sizes="40vw" placeholder="blur" />,
             link: "https://public.tableau.com/views/PolyethyleneinSouthAmerica/Capacity?:language=en-US&:display_count=n&:origin=viz_share_link",
         },
         {
             title: "Energy Production",
             description: "General data of petroleum and its derivates produced in Brazil.",
-            image: <Image src={anp} alt="Tableau Dashboard" fill={true} sizes="50vw" />,
+            image: <Image src={anp} alt="Tableau Dashboard" fill={true} sizes="40vw" placeholder="blur" />,
             link: "https://public.tableau.com/views/DadosBrasilEnergia/ProjeoVendadeGasolinaCporestado?:language=en-US&:display_count=n&:origin=viz_share_link",
         },
         {
             title: "Plastic Data",
             description: "Brazil's import and export data of the most common plastics.",
-            image: <Image src={balanca} alt="Tableau Dashboard" fill={true} sizes="50vw" />,
+            image: <Image src={balanca} alt="Tableau Dashboard" fill={true} sizes="40vw" placeholder="blur" />,
             link: "https://public.tableau.com/views/BalanaComercialBrasileiraresinas/BalanaComercial?:language=en-US&:display_count=n&:origin=viz_share_link",
         },
     ];

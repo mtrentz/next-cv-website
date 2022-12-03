@@ -30,7 +30,7 @@ const Animations = () => {
         {
             title: "Mouse-following Pyramids",
             description: <span>Inspired by a digital art on reddit, it&apos;s a very beautiful pyramid scheme that follows your mouse on the screen.</span>,
-            image: <Image src={pyramids} alt="Pyramids" fill={true} sizes="14 rem" />,
+            image: <Image src={pyramids} alt="Pyramids" fill={true} sizes="14 rem" priority={true} />,
             link: "https://github.com/mtrentz/p5_projects/tree/master/piramides",
         },
         {
