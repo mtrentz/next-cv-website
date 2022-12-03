@@ -28,7 +28,7 @@ import ThemeToggle from './ThemeToggle';
 
 
 const Navbar = () => {
-    const [showSidebar, setShowSidebar] = useState(true);
+    const [showSidebar, setShowSidebar] = useState(false);
     const sidebarRef = useRef<HTMLDivElement>(null)
 
     // Tamanho de uma tela de celular pro tailwind
@@ -41,9 +41,9 @@ const Navbar = () => {
     // Fecha o sidebar quando clicar fora dele
     useEffect(() => {
         function handleClickOutside(event: any) {
-            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-                // Check if screen is smaller than md
-                if (window.innerWidth < tailwindMdSizeInt) {
+            // Check if screen is smaller than md
+            if (window.innerWidth < tailwindMdSizeInt) {
+                if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
                     setShowSidebar(false)
                 }
             }
@@ -78,7 +78,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-
+            {/* TODO: Colocar onClick={() => (setShowSidebar(false))} em todos os icones da nav */}
 
             {/* Sidebar */}
             <nav
@@ -88,7 +88,7 @@ const Navbar = () => {
                 <div className="h-full">
                     {/* Button Close for Mobile */}
                     <div className="md:hidden flex justify-end w-full pr-1 pt-1">
-                        <button onClick={toggleSidebar}>
+                        <button onClick={() => (setShowSidebar(false))}>
                             <AiOutlineCloseSquare className="h-6 w-6" />
                         </button>
                     </div>
@@ -109,47 +109,56 @@ const Navbar = () => {
                             title={AboutMeContent.title}
                             icon={<AiOutlineUser />}
                             href={`/?q=${AboutMeContent.experience.slug}`}
+                            onClick={() => (setShowSidebar(false))}
                         />
                         <NavbarSubItem
                             title={AboutMeContent.experience.title}
                             icon={<HiOutlineAcademicCap />}
                             href={`/?q=${AboutMeContent.experience.slug}`}
+                            onClick={() => (setShowSidebar(false))}
                         />
                         <NavbarSubItem
                             title={AboutMeContent.tech_skills.title}
                             icon={<HiOutlineTerminal />}
                             href={`/?q=${AboutMeContent.tech_skills.slug}`}
+                            onClick={() => (setShowSidebar(false))}
                         />
                         <NavbarSubItem
                             title={AboutMeContent.frameworks.title}
                             icon={<HiOutlineCog />}
                             href={`/?q=${AboutMeContent.frameworks.slug}`}
+                            onClick={() => (setShowSidebar(false))}
                         />
                         <NavbarSubItem
                             title={AboutMeContent.complementary.title}
                             icon={<HiOutlinePuzzle />}
                             href={`/?q=${AboutMeContent.complementary.slug}`}
+                            onClick={() => (setShowSidebar(false))}
                         />
 
                         <NavbarMainItem
                             title={ProjectsContent.title}
                             icon={<HiOutlineSparkles />}
                             href={`/projects?q=${ProjectsContent.coding.slug}`}
+                            onClick={() => (setShowSidebar(false))}
                         />
                         <NavbarSubItem
                             title={ProjectsContent.coding.title}
                             icon={<HiOutlineCode />}
                             href={`/projects?q=${ProjectsContent.coding.slug}`}
+                            onClick={() => (setShowSidebar(false))}
                         />
                         <NavbarSubItem
                             title={ProjectsContent.animations.title}
                             icon={<AiOutlinePlayCircle />}
                             href={`/projects?q=${ProjectsContent.animations.slug}`}
+                            onClick={() => (setShowSidebar(false))}
                         />
                         <NavbarSubItem
                             title={ProjectsContent.data_vizz.title}
                             icon={<HiOutlineChartBar />}
                             href={`/projects?q=${ProjectsContent.data_vizz.slug}`}
+                            onClick={() => (setShowSidebar(false))}
                         />
                     </div>
                     {/* <DownloadCVBtn cv="/MATEUS_TRENTZ_CV.pdf" /> */}

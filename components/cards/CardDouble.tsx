@@ -11,7 +11,7 @@ type Props = {
 const CardDouble = ({ cardTitle, cardDescription, cardImage, cardBigImage }: Props) => {
     return (
         <div className="col-span-1 lg:col-span-2 flex flex-row bg-lightSecondary dark:bg-darkPrimary-800 rounded-lg shadow-md overflow-hidden">
-            <div className="rounded-r-xl">
+            <div>
                 {/* Image Part */}
                 <div className="flex flex-row justify-center my-4">
                     {cardImage}
