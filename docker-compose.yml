@@ -1,0 +1,17 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: website-cv-next
+    # ports:
+    #   - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - main
+ 
+networks:
+  main:
+    external: true
