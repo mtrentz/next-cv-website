@@ -41,7 +41,7 @@ const DataVizzes = () => {
         },
         {
             title: "Energy Production",
-            description: "General data of petroleum and its derivates produced in Brazil.",
+            description: "General data of petroleum and its derivatives produced in Brazil.",
             image: <Image src={anp} alt="Tableau Dashboard" fill={true} sizes="40vw" placeholder="blur" />,
             link: "https://public.tableau.com/views/DadosBrasilEnergia/ProjeoVendadeGasolinaCporestado?:language=en-US&:display_count=n&:origin=viz_share_link",
         },

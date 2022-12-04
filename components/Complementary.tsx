@@ -10,6 +10,8 @@ import sdu from "../public/complementary_imgs/sdu.png"
 import unibio from "../public/complementary_imgs/unibio.png"
 
 const Complementary = () => {
+    // TODO: Cursos alura+udemy (linkar certificado linkedin?)
+
     return (
         <div className="flex flex-row justify-center align-middle">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-4 gap-2">
@@ -58,8 +60,6 @@ const Complementary = () => {
                     cardTitle="TU Dortmund"
                     cardDescription="Three months summer course in Germany studying Chemical Engineering."
                 />
-
-                {/* TODO: Udemy + Alura? */}
             </div>
         </div>
     )

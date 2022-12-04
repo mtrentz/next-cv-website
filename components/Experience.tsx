@@ -15,7 +15,7 @@ const Experience = () => {
                 <div className="md:flex md:flex-col md:items-center md:justify-center lg:flex-row">
                     {/* Profile Image */}
                     <div className="flex justify-center">
-                        <div className="rounded-full mx-auto border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden items-center w-60 h-60 relative">
+                        <div className="rounded-full mx-auto border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden items-center w-60 h-60 my-2 relative">
                             <Image
                                 src={me}
                                 alt="Profile Picture"
@@ -48,7 +48,7 @@ const Experience = () => {
                     {/* University Part */}
                     <div className="md:flex md:flex-col lg:flex-row md:justify-center md:items-center">
                         {/* University Picture */}
-                        <div className="rounded-full mx-auto my-3 md:mx-5 border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden w-48 h-48 relative">
+                        <div className="rounded-full mx-auto md:mx-5 border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden w-48 h-48 my-3 relative">
                             <Image
                                 src={ufrgs}
                                 alt="University Picture"
@@ -70,13 +70,13 @@ const Experience = () => {
 
                     {/* Horizontal separator on mobile, vertical on bigger screens */}
                     <div className="h-5 flex flex-col justify-center items-center md:w-5 md:flex-none md:pl-3 md:h-52">
-                        <div className="bg-lightPrimary-300 dark:bg-darkPrimary-700 w-5/6 h-[2px] md:h-3/4 md:w-[2px] md:transform md:rotate-[5deg]"></div>
+                        <div className="bg-lightPrimary-300 dark:bg-darkPrimary-700 w-5/6 h-px md:h-3/4 md:w-px md:transform md:rotate-6"></div>
                     </div>
 
                     {/* Job Part */}
                     <div className="md:flex md:flex-col lg:flex-row md:justify-center md:items-center">
                         {/* Job Picture */}
-                        <div className="rounded-2xl mx-auto my-3 md:mx-5 border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden w-48 h-36 pt-2 relative">
+                        <div className="rounded-2xl mx-auto md:mx-5 border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden w-48 h-36 my-3 pt-2 relative">
                             <Image
                                 src={maxiquim}
                                 alt="Job Picture"

@@ -28,7 +28,7 @@ const Frameworks = () => {
     let content: FrameworkContent = [
         {
             title: "Django",
-            description: "This is the framework I'm most comfortable with. I've used it for many projects, both professionaly and as a hobby.",
+            description: "This is the framework I'm most comfortable with. I've used it for many projects, both professionally and as a hobby.",
             image: <Image
                 src={django}
                 alt="django-logo"
@@ -48,7 +48,7 @@ const Frameworks = () => {
         },
         {
             title: "Next.js",
-            description: "I've used Next.js for serious full-stack applications professionaly.",
+            description: "I've used Next.js for serious full-stack applications professionally.",
             image: < Image
                 src={nextjs}
                 alt="nextJS-logo"
@@ -58,7 +58,7 @@ const Frameworks = () => {
         },
         {
             title: "TailwindCSS",
-            description: "Tailwind is by far my favorite way of styling webpages. It's what made me enjoy frontend development.",
+            description: "Tailwind is by far my favorite way of styling web pages. It's what made me enjoy frontend development.",
             image: <Image
                 src={tailwind}
                 alt="tailwind-logo"
@@ -98,7 +98,7 @@ const Frameworks = () => {
         },
         {
             title: "Keras",
-            description: "Keras makes it very easy to build quick ML models. I've used it professionaly for a few projects.",
+            description: "Keras makes it very easy to build quick ML models. I've used it professionally for a few projects.",
             image: <Image
                 src={keras}
                 alt="keras-logo"

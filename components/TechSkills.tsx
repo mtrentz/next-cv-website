@@ -14,11 +14,12 @@ import mysql from "../public/tech_images/mysql.png"
 import typescript from "../public/tech_images/typescript.png"
 import git from "../public/tech_images/git.png"
 import docker from "../public/tech_images/docker.png"
+import nginx from "../public/tech_images/nginx.png"
+import linux from "../public/tech_images/linux.png"
+import actions from "../public/tech_images/actions.png"
 
 const TechSkills = () => {
-    // TODO: nginx
-    // TODO: github actions
-
+    // TODO: networking
 
     return (
         <div className="flex flex-row justify-center align-middle">
@@ -127,6 +128,42 @@ const TechSkills = () => {
                     }
                     cardTitle="Git"
                     cardDescription="I use Git for version control and to collaborate with others."
+                />
+                <Card
+                    cardImage={
+                        <Image
+                            src={linux}
+                            alt="linux-logo"
+                            sizes="9rem"
+                            className="h-32 w-32"
+                        />
+                    }
+                    cardTitle="Linux"
+                    cardDescription="I use Linux as my main OS (Pop!_OS) and also for servers at work."
+                />
+                <Card
+                    cardImage={
+                        <Image
+                            src={actions}
+                            alt="github-actions-logo"
+                            sizes="9rem"
+                            className="h-32 w-32"
+                        />
+                    }
+                    cardTitle="Github Actions"
+                    cardDescription="I use Github Actions for CI/CD both professionally and for personal projects."
+                />
+                <Card
+                    cardImage={
+                        <Image
+                            src={nginx}
+                            alt="nginx-logo"
+                            sizes="9rem"
+                            className="h-32 w-32"
+                        />
+                    }
+                    cardTitle="Nginx"
+                    cardDescription="I use Nginx for every web server and reverse proxy I set up."
                 />
             </div>
         </div>

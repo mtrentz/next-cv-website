@@ -54,8 +54,8 @@ const Animations = () => {
         },
         {
             title: "Stepping Stripes",
-            description: <span>Groups of stripes that moves synchronously, stepping towards the next position. Alternating directions at every cycle.</span>,
-            image: <Image src={stepping_stripes} alt="Stepping Striples" fill={true} sizes="14 rem" />,
+            description: <span>Groups of stripes that move synchronously, stepping towards the next position. Alternating directions at every cycle.</span>,
+            image: <Image src={stepping_stripes} alt="Stepping Stripes" fill={true} sizes="14 rem" />,
             link: "https://github.com/mtrentz/p5_projects/tree/master/stepping_stripes",
         },
         {
@@ -73,12 +73,12 @@ const Animations = () => {
         {
             title: "Minesweeper",
             description: <span>Even less to say about this one, it&apos;s a very basic implementation of a minesweeper game with all the common features.</span>,
-            image: <Image src={minesweeper} alt="minsesweeper" fill={true} sizes="14 rem" />,
+            image: <Image src={minesweeper} alt="minesweeper" fill={true} sizes="14 rem" />,
             link: "https://github.com/mtrentz/p5_projects/tree/master/minesweeper",
         },
         {
             title: "Orbits",
-            description: <span>Groups of spinning circles that gives a pretty cool effect! Try it yourself on <TextLink href="https://editor.p5js.org/mtrentz/sketches/veOB1qfgj" text="p5.js editor" />.</span>,
+            description: <span>Groups of spinning circles that give a pretty cool effect! Try it yourself on <TextLink href="https://editor.p5js.org/mtrentz/sketches/veOB1qfgj" text="p5.js editor" />.</span>,
             image: <Image src={orbits} alt="orbits" fill={true} sizes="14 rem" />,
             link: "https://github.com/mtrentz/p5_projects/tree/master/orbitas",
         },

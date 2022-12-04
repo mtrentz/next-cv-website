@@ -78,12 +78,10 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* TODO: Colocar onClick={() => (setShowSidebar(false))} em todos os icones da nav */}
-
             {/* Sidebar */}
             <nav
                 className={`bg-lightSecondary dark:bg-darkPrimary-800 h-screen flex flex-col w-52 lg:w-60 lg:px-1 2xl:px-2 absolute inset-y-0 left-0 transform ${showSidebar ? null : "-translate-x-full"
-                    } md:relative md:translate-x-0 transition duration-200 ease-in-out z-50 md:pt-4`}
+                    } md:relative md:translate-x-0 transition duration-200 ease-in-out z-50 md:pt-4 overflow-y-auto`}
             >
                 <div className="h-full">
                     {/* Button Close for Mobile */}
@@ -94,8 +92,8 @@ const Navbar = () => {
                     </div>
 
                     {/* Logo */}
-                    <div className="flex items-center justify-center h-[15%]">
-                        <div className="w-28 h-2w-28 rounded-md overflow-hidden">
+                    <div className="flex items-center justify-center h-26">
+                        <div className="w-28 h-28 rounded-md overflow-hidden">
                             <Link href="/">
                                 <LogoWebsite />
                             </Link>
