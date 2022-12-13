@@ -35,8 +35,6 @@ export function ThemeProvider({ children }: Props) {
     }, [])
 
     function toggleTheme() {
-        console.log("toggleTheme")
-
         if (theme === 'light') {
             setTheme('dark');
             setThemeStorage('dark');

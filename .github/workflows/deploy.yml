@@ -18,8 +18,6 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          # O git checkout ali é pra tirar as mudanças do arqvo,
-          # que sempre vão ter por causa do "chmod +x"
           script: |
             cd ~/services/new-next-cv-website
             git checkout main

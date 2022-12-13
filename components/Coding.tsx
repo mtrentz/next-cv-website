@@ -31,7 +31,7 @@ const Coding = () => {
     const content: CodingContent = [
         {
             title: "Spotify Dashboard",
-            description: <span> Full-stack application that uses the Spotify API to keep track of your listening history in real-time. It also has a feature to import your history, obtained from requesting your Spotify data. Frontend with a beautiful dashboard and many interesting statistics. Backend made in {tech.python} with {tech.django}, frontend made with {tech.react} and deployed with {tech.docker}. </span>,
+            description: <span> Full-stack application that uses the Spotify API to keep track of your listening history in real-time. It has a feature to import your history obtained from requesting your Spotify data. Web interface with a beautiful dashboard and many interesting statistics. Backend was made in {tech.python} with {tech.django}, frontend was made with {tech.react} and deployed with {tech.docker}. </span>,
             link: "https://github.com/mtrentz/Spotify-Dashboard",
             image: <Image src={spotify} alt="Spotify" fill={true} sizes="14 rem" priority={true} />,
         },

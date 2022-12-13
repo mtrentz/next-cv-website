@@ -8,14 +8,14 @@ import ufrgs from '../public/experience_imgs/ufrgs.png'
 
 const Experience = () => {
     return (
-        <div className="flex flex-row justify-center align-middle lg:h-4/6 my-4 lg:my-7">
-            {/* Big Card / Container */}
-            <div className="bg-lightSecondary dark:bg-darkPrimary-800 w-11/12 flex flex-col rounded-lg overflow-hidden p-4 md:justify-around">
+        <div className="flex flex-row justify-center align-middle my-4">
+            <div className="bg-lightSecondary dark:bg-darkPrimary-800 px-4 lg:px-0 rounded-lg shadow-md w-11/12 py-6">
+
                 {/* Top part - Profile Img and Self Description */}
-                <div className="md:flex md:flex-col md:items-center md:justify-center lg:flex-row">
+                <div className="flex flex-col items-center justify-center lg:flex-row lg:mx-6">
                     {/* Profile Image */}
-                    <div className="flex justify-center">
-                        <div className="rounded-full mx-auto border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden items-center w-60 h-60 my-2 relative">
+                    <div className="flex justify-center mb-4">
+                        <div className="rounded-full border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden w-60 h-60 relative">
                             <Image
                                 src={me}
                                 alt="Profile Picture"
@@ -25,71 +25,82 @@ const Experience = () => {
                         </div>
                     </div>
                     {/* Profile Text */}
-                    <div className="py-[2%] flex flex-col flex-1 justify-center text-center md:w-[70%] md:px-[5%]">
+                    <div className="flex flex-col flex-1 justify-justify text-center gap-1">
                         <h2 className="font-semibold text-lg md:hidden">Mateus K. Trentz</h2>
                         <h2 className="font-semibold text-lg hidden md:block">Mateus Kochhann Trentz</h2>
-                        <p className=" flex-0 leading-normal">
-                            {`I'm a Chemical Engineer who is very passionate about Tech and
-                            Data. I love programming and I've been doing it for a few years
-                            now. I currently work as a Data Scientist at MaxiQuim, which is a
-                            consulting company for the chemical industry in Brazil, where I
-                            live.`}
-                        </p>
+                        <div className="flex flex-col gap-2 md:self-center md:w-11/12">
+                            <p className=" flex-0 leading-normal antialiased">
+                                {`I'm a Chemical Engineer who is very passionate about programming and technology in general.
+                    I started programming a few years ago doing mostly data science and data analysis,
+                    but in recent years I have expanded my skill set to include a wider range of programming languages
+                    and technologies, becoming more of an all-around developer.`}
+                            </p>
+                            <p className=" flex-0 leading-normal antialiased">
+                                {`More recently I've turned my
+                    attention to web development, which was the field that got me most excited about programming.
+                    I'm currently working as a Full Stack Developer at MaxiQuim, a consulting company for the chemical industry in Brazil.`}
+                            </p>
+                        </div>
                     </div>
                 </div>
 
+
                 {/* Horizontal Separator */}
-                <div className="h-5 flex flex-col justify-center items-center">
+                <div className="h-2 my-4 flex flex-col justify-center items-center">
                     <div className="bg-lightPrimary-300 dark:bg-darkPrimary-700 w-5/6 h-px"></div>
                 </div>
 
                 {/* Bottom Part. Uni and Job title */}
                 <div className="md:flex md:flex-row md:justify-around">
                     {/* University Part */}
-                    <div className="md:flex md:flex-col lg:flex-row md:justify-center md:items-center">
+                    <div className="flex flex-col lg:flex-row md:justify-center md:items-center md:gap-4 md:w-5/12">
                         {/* University Picture */}
-                        <div className="rounded-full mx-auto md:mx-5 border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden w-48 h-48 my-3 relative">
-                            <Image
-                                src={ufrgs}
-                                alt="University Picture"
-                                fill={true}
-                                sizes="12rem"
-                                className="pb-2 pl-2"
-                            />
+                        <div className="flex justify-center my-4">
+                            <div className="rounded-full border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden w-48 h-48 my-3 relative">
+                                <Image
+                                    src={ufrgs}
+                                    alt="University Picture"
+                                    fill={true}
+                                    sizes="12rem"
+                                    className="pb-2 pl-2"
+                                />
+                            </div>
                         </div>
+
                         {/* University Text */}
-                        {/* Text Part */}
-                        <div className="w-full flex flex-col items-center lg:w-1/2">
-                            <p className="font-semibold text-center">
+                        <div className="w-full flex flex-col items-center">
+                            <p className="font-semibold text-center w-8/12 md:w-full">
                                 Universidade Federal do Rio Grande do Sul
                             </p>
-                            <p className="flex-0 text-center"> Chemical Engineering </p>
-                            <p className="flex-0 text-center"> Graduated in 2020 </p>
+                            <p className="flex-0 text-center leading-normal antialiased"> Chemical Engineering </p>
+                            <p className="flex-0 text-center leading-normal antialiased"> Graduated in 2020 </p>
                         </div>
                     </div>
 
                     {/* Horizontal separator on mobile, vertical on bigger screens */}
-                    <div className="h-5 flex flex-col justify-center items-center md:w-5 md:flex-none md:pl-3 md:h-52">
+                    <div className="h-2 my-4 flex flex-col justify-center items-center md:w-5 md:flex-none md:pl-3 md:h-52">
                         <div className="bg-lightPrimary-300 dark:bg-darkPrimary-700 w-5/6 h-px md:h-3/4 md:w-px md:transform md:rotate-6"></div>
                     </div>
 
                     {/* Job Part */}
-                    <div className="md:flex md:flex-col lg:flex-row md:justify-center md:items-center">
+                    <div className="flex flex-col lg:flex-row md:justify-center md:items-center md:gap-4 md:w-5/12">
                         {/* Job Picture */}
-                        <div className="rounded-2xl mx-auto md:mx-5 border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden w-48 h-36 my-3 pt-2 relative">
-                            <Image
-                                src={maxiquim}
-                                alt="Job Picture"
-                                fill={true}
-                                sizes="13rem"
-                            // className="w-32 h-32"
-                            />
+                        <div className="flex justify-center my-4">
+                            <div className="rounded-2xl border border-lightPrimary-300 dark:border-darkPrimary-700 overflow-hidden w-48 h-36 my-3 pt-2 relative">
+                                <Image
+                                    src={maxiquim}
+                                    alt="Job Picture"
+                                    fill={true}
+                                    sizes="13rem"
+                                />
+                            </div>
                         </div>
+
                         {/* Job Title */}
                         <div>
                             <p className="font-semibold text-center">MaxiQuim</p>
-                            <p className="flex-0 text-center"> Developer </p>
-                            <p className="flex-0 text-center"> mar/2020 - present </p>
+                            <p className="flex-0 text-center leading-normal antialiased"> Full Stack Developer </p>
+                            <p className="flex-0 text-center leading-normal antialiased"> mar/2020 - present </p>
                         </div>
                     </div>
                 </div>

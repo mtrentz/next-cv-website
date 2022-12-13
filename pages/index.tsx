@@ -55,14 +55,10 @@ export default function Home() {
 
         {/* O experience vai ter que ser o default qnd nao tiver query */}
         {(q === AboutMeContent.experience.slug || q === undefined) && <Experience />}
+
         {q === AboutMeContent.tech_skills.slug && <TechSkills />}
         {q === AboutMeContent.frameworks.slug && <Frameworks />}
         {q === AboutMeContent.complementary.slug && <Complementary />}
-
-
-
-        {/* <TechSkills />
-        <Complementary /> */}
 
       </main>
     </>
