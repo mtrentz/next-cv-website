@@ -24,4 +24,6 @@ export const TechColored = {
     docker: TechColoring("Docker", "#2496ED"),
     easyocr: TechColoring("EasyOCR", "#EE4C2C"),
     fastapi: TechColoring("FastAPI", "#059083"),
+    elixir: TechColoring("Elixir", "#765a7d"),
+    phoenix: TechColoring("Phoenix", "#fb5127"),
 }

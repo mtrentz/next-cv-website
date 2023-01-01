@@ -16,6 +16,7 @@ import imgur from '../public/coding_imgs/imgur.png'
 import spotify from '../public/coding_imgs/spotify.png'
 import decimal from '../public/coding_imgs/decimal.png'
 import crawler from '../public/coding_imgs/crawler.png'
+import todo from '../public/coding_imgs/todo.png'
 
 interface CodingCardContent {
     title: string
@@ -64,6 +65,12 @@ const Coding = () => {
             description: <span>CLI application made in {tech.golang} that calculates the similarity between strings. Accepts files with many words, calculating the similarity of all combinations in parallel. Works with different algorithms. Easy usage with {tech.docker}.</span>,
             link: "https://github.com/mtrentz/stringsim",
             image: <Image src={decimal} alt="Decimal" fill={true} sizes="14 rem" className="dark:invert" />,
+        },
+        {
+            title: "Collab-Todo",
+            description: <span>Real-time collaborative to-do list made with {tech.elixir} and {tech.phoenix}. Create rooms and invite other people to collaborate with you. Deployed with {tech.docker}. Try it live on this <TextLink href="/projects/?q=animations" text="website" openOnCurrentWindow={true} />.</span>,
+            link: "https://github.com/mtrentz/collab-todo",
+            image: <Image src={todo} alt="To-Do" fill={true} sizes="14 rem" className="p-10" />,
         },
         {
             title: "Website Text Scraper",
