@@ -17,9 +17,13 @@ import docker from "../public/tech_images/docker.png"
 import nginx from "../public/tech_images/nginx.png"
 import linux from "../public/tech_images/linux.png"
 import actions from "../public/tech_images/actions.png"
+import elixir from "../public/tech_images/elixir.png"
+import html from "../public/tech_images/html.png"
+import css from "../public/tech_images/css.png"
 
 const TechSkills = () => {
     // TODO: networking
+
 
     return (
         <div className="flex flex-row justify-center align-middle">
@@ -164,6 +168,42 @@ const TechSkills = () => {
                     }
                     cardTitle="Nginx"
                     cardDescription="I use Nginx for every web server and reverse proxy I set up."
+                />
+                <Card
+                    cardImage={
+                        <Image
+                            src={elixir}
+                            alt="elixir-logo"
+                            sizes="9rem"
+                            className="h-32 w-32"
+                        />
+                    }
+                    cardTitle="Elixir"
+                    cardDescription="I'm still learning Elixir, but already made a few projects with it."
+                />
+                <Card
+                    cardImage={
+                        <Image
+                            src={html}
+                            alt="html-logo"
+                            sizes="9rem"
+                            className="h-32 w-32"
+                        />
+                    }
+                    cardTitle="HTML"
+                    cardDescription="I've learned HTML years ago and use it for web development."
+                />
+                <Card
+                    cardImage={
+                        <Image
+                            src={css}
+                            alt="css-logo"
+                            sizes="9rem"
+                            className="h-32 w-32"
+                        />
+                    }
+                    cardTitle="CSS"
+                    cardDescription="As well as HTML, I've learned CSS years ago and use it for web development."
                 />
             </div>
         </div>

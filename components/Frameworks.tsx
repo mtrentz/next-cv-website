@@ -13,6 +13,9 @@ import pandas from "../public/framework_imgs/pandas.png"
 import tailwind from "../public/framework_imgs/tailwind.png"
 import keras from "../public/framework_imgs/keras.png"
 import pytorch from "../public/framework_imgs/pytorch.png"
+import node from "../public/framework_imgs/node.png"
+import numpy from "../public/framework_imgs/numpy.png"
+import phoenix from "../public/framework_imgs/phoenix.png"
 
 interface FrameworkCardContent {
     title: string
@@ -24,6 +27,9 @@ type FrameworkContent = FrameworkCardContent[]
 
 
 const Frameworks = () => {
+
+    // TODO: Express (ainda não)
+    // TODO: Flask (?)
 
     let content: FrameworkContent = [
         {
@@ -97,6 +103,16 @@ const Frameworks = () => {
             />
         },
         {
+            title: "Phoenix",
+            description: "Since I've learned Elixir, I've been learning Phoenix as well.",
+            image: <Image
+                src={phoenix}
+                alt="phoenix-logo"
+                sizes="8rem"
+                className="h-32 w-56 rounded-lg"
+            />
+        },
+        {
             title: "Keras",
             description: "Keras makes it very easy to build quick ML models. I've used it professionally for a few projects.",
             image: <Image
@@ -112,6 +128,26 @@ const Frameworks = () => {
             image: <Image
                 src={pytorch}
                 alt="pytorch-logo"
+                sizes="8rem"
+                className="h-32 w-32 rounded-lg"
+            />
+        },
+        {
+            title: "Node",
+            description: "I've learned Node.js to build a few backend applications in Typescript.",
+            image: <Image
+                src={node}
+                alt="node-logo"
+                sizes="8rem"
+                className="h-32 w-56 rounded-lg"
+            />
+        },
+        {
+            title: "Numpy",
+            description: "I've used Numpy professionally for working with data.",
+            image: <Image
+                src={numpy}
+                alt="numpy-logo"
                 sizes="8rem"
                 className="h-32 w-32 rounded-lg"
             />
