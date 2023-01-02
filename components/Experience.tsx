@@ -26,8 +26,8 @@ const Experience = () => {
                     </div>
                     {/* Profile Text */}
                     <div className="flex flex-col flex-1 justify-justify text-center gap-1">
-                        <h2 className="font-semibold text-lg md:hidden">Mateus K. Trentz</h2>
-                        <h2 className="font-semibold text-lg hidden md:block">Mateus Kochhann Trentz</h2>
+                        <h2 className="font-semibold text-xl md:hidden">Mateus K. Trentz</h2>
+                        <h2 className="font-semibold text-2xl hidden md:block">Mateus Kochhann Trentz</h2>
                         <div className="flex flex-col gap-2 md:self-center md:w-11/12">
                             <p className=" flex-0 leading-normal antialiased">
                                 {`I'm a Chemical Engineer who is very passionate about programming and technology in general.

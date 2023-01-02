@@ -68,7 +68,7 @@ const Coding = () => {
         },
         {
             title: "Collab-Todo",
-            description: <span>Real-time collaborative to-do list made with {tech.elixir} and {tech.phoenix}. Create rooms and invite other people to collaborate with you. Deployed with {tech.docker}. Try it live on this <TextLink href="/projects/?q=animations" text="website" openOnCurrentWindow={true} />.</span>,
+            description: <span>Real-time collaborative to-do list made with {tech.elixir} and {tech.phoenix}. Create rooms and invite other people to collaborate with you. Deployed with {tech.docker}. Try it live on this <TextLink href="https://collab-todo.mtrentz.com.br" text="website" openOnCurrentWindow={false} />.</span>,
             link: "https://github.com/mtrentz/collab-todo",
             image: <Image src={todo} alt="To-Do" fill={true} sizes="14 rem" className="p-10" />,
         },

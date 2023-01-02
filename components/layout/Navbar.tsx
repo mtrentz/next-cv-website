@@ -25,6 +25,7 @@ import NavbarSubItem from './NavbarSubItem';
 
 import { AboutMeContent, ProjectsContent } from '../../types';
 import ThemeToggle from './ThemeToggle';
+import DownloadCVButton from './DownloadCVButton';
 
 
 const Navbar = () => {
@@ -159,12 +160,13 @@ const Navbar = () => {
                             onClick={() => (setShowSidebar(false))}
                         />
                     </div>
-                    {/* <DownloadCVBtn cv="/MATEUS_TRENTZ_CV.pdf" /> */}
                 </div>
 
 
                 {/* Toggle theme */}
                 <ThemeToggle />
+
+                <DownloadCVButton />
 
                 {/* socials */}
                 <div className="h-24 flex-grow-0 mb-3">
