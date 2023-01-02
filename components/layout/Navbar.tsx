@@ -159,14 +159,11 @@ const Navbar = () => {
                             href={`/projects?q=${ProjectsContent.data_vizz.slug}`}
                             onClick={() => (setShowSidebar(false))}
                         />
+                        <DownloadCVButton />
                     </div>
                 </div>
 
-
-                {/* Toggle theme */}
                 <ThemeToggle />
-
-                <DownloadCVButton />
 
                 {/* socials */}
                 <div className="h-24 flex-grow-0 mb-3">
